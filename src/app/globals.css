@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-sans: 'Geist', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ink text-cream antialiased;
+    font-feature-settings: 'ss01', 'ss02';
+  }
+
+  ::selection {
+    @apply bg-accent text-ink;
+  }
+}
+
+@layer components {
+  .container-x {
+    @apply mx-auto w-full max-w-7xl px-6 md:px-10;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center gap-2 rounded-full bg-cream px-6 py-3 text-sm font-medium text-ink transition-all hover:bg-accent hover:text-ink;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center gap-2 rounded-full border border-ink-100 px-6 py-3 text-sm font-medium text-cream transition-all hover:border-cream;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-ink-100 bg-ink-50/50 px-4 py-1.5 text-xs uppercase tracking-widest text-muted;
+  }
+
+  .card {
+    @apply rounded-3xl border border-ink-100 bg-ink-50/50 p-8 backdrop-blur-sm;
+  }
+
+  .grain::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+}
