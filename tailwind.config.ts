@@ -5,19 +5,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Slidesly-inspired dark palette
         ink: {
-          DEFAULT: '#0A0A0B',
-          50: '#18181B',
-          100: '#1F1F23',
-          200: '#27272A',
+          DEFAULT: '#F5F1EA',
+          50: '#FAF7F1',
+          100: '#EDE7DC',
+          200: '#D9D2C4',
         },
-        cream: '#F5F1EA',
+        cream: '#1A1A1A',
         accent: {
-          DEFAULT: '#FF6B3D', // warm coral
+          DEFAULT: '#FF6B3D',
           soft: '#FFB199',
         },
-        muted: '#A1A1AA',
+        muted: '#6B6B70',
       },
       fontFamily: {
         display: ['var(--font-display)', 'serif'],
