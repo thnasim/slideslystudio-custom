@@ -6,11 +6,11 @@ const config: Config = {
     extend: {
       colors: {
         ink: {
-          DEFAULT: '#F5F1EA',
-          50: '#FAF7F1',
-          100: '#EDE7DC',
-          200: '#D9D2C4',
-        },
+  DEFAULT: '#FFFFFF',
+  50: '#FAFAFA',
+  100: '#F4F4F5',
+  200: '#E4E4E7',
+},
         cream: '#1A1A1A',
         accent: {
           DEFAULT: '#FF6B3D',
