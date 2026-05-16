@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --font-display: 'Instrument Serif', Georgia, serif;
-  --font-sans: 'Geist', system-ui, sans-serif;
+--font-display: 'DM Sans', system-ui, sans-serif;
+--font-sans: 'Geist', system-ui, sans-serif;
 }
 
 @layer base {
